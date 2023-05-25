@@ -1,0 +1,136 @@
+html{
+    font-size: 18px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]{
+    float: left;
+    padding: 0.4rem
+}
+
+:root{
+    --AzulOscuro: #545871;
+    --RosaPastel: #F1CFCD;
+    --CasiBlanco: #F0F1F8;
+    --AzulGris: #DADBE7;
+    --alerta: #C37E7B;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: var(--CasiBlanco);
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    color: var(--AzulOscuro);
+}
+
+.friends{
+    background-color: var(--RosaPastel);
+    background-image: url(../img/pngegg\ \(9\).png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 400;
+    position: relative;
+    color: var(--AzulOscuro);
+}
+.friends p{
+    position: absolute;
+    bottom: 1rem;
+    right: 0.5rem;
+    text-align: end;
+    padding: 0.5rem;
+    text-anchor: end;
+    line-height: 1.5rem;
+    text-justify: inter-word;
+}
+
+.form{
+    background-color: var(--AzulGris);
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.info input{
+    height: 1.3rem;
+    padding: 0.3rem;
+    font-family: 'Mukta', sans-serif;
+    text-align: end;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.info button{
+    width: 49%;
+}
+
+header{
+    background-image: url(../img/logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-clip: border-box;
+}
+
+h1{
+    text-align: center;
+    color: #9497A7;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 700;
+}
+
+.obligatorio{
+    color: var(--alerta);
+    font-size: 1rem;
+}
+
+#reset, #enviar{
+    border-style: none;
+    border-radius: 5px;
+    
+}
+
+#reset{
+    background-color: var(--AzulOscuro);
+    color: var(--AzulGris);
+    font-family: 'Poltawski Nowy', serif;
+    font-size: 1rem;
+}
+
+#enviar{
+    background-color: var(--alerta);
+    color: var(--RosaPastel);
+    font-family: 'Powalski Nowy', serif;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}

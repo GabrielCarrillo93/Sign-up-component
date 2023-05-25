@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/heart-pawprint-svg-file.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Poltawski+Nowy:wght@400;700&display=swap" rel="stylesheet">
+    <title>Registrate!</title>
+</head>
+<body>
+    <header class="col-7">
+        <h1 class="col-12">Registrate al voluntariado!</h1>
+    </header>
+    <main class="col-7">
+        <section class="col-6 friends">
+            <p>Llená el formulario si querés participar en nuestra ONG para ayudar a nuestros amiguitos de cuatro patas con su alimento y refugio. Una vez que llenes el formulario nos comunicaremos por mail y te llamaremos</p>
+        </section>
+        <section class="col-6 form">
+            <form action="">
+                <fieldset>
+                    <legend>Información de contacto</legend>
+                    <div class="info col-12">
+                        <label for="fname" class="col-5">Nombre<span class="obligatorio">*</span></label>
+                        <input type="text" class="col-7" required>
+                    </div>
+                    <div class="info col-12">
+                        <label for="lname" class="col-5">Apellido<span class="obligatorio">*</span></label>
+                        <input type="text" class="col-7" required>
+                    </div>
+                    <div class="info col-12">
+                        <label for="address" class="col-5">Dirección<span class="obligatorio">*</span></label>
+                        <input type="text" class="col-7" required>
+                    </div>
+                    <div class="info col-12">
+                        <label for="phone" class="col-5">Teléfono<span class="obligatorio">*</span></label>
+                        <input type="number" class="col-7" required>
+                    </div>
+                    <div class="info col-12">
+                        <label for="email" class="col-5">Email<span class="obligatorio">*</span></label>
+                        <input type="email" class="col-7" required>
+                    </div>
+                    <div class="info col-12">
+                        <button type="reset" id="reset">Borrar</button>
+                        <button type="submit" id="enviar">Quiero ser parte!</button>
+                    </div>
+                </fieldset>
+            </form>
+            <span class="obligatorio">Todos los campos con * son necesarios</span>
+        </section>
+    </main>
+</body>
+</html>
